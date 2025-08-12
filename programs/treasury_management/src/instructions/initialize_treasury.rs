@@ -23,6 +23,7 @@ use anchor_spl::{
 		stake_target_percentage: u8,
 	)]
 	pub struct InitializeTreasury<'info> {
+		#[account(mut)]
 		pub authority: Signer<'info>,
 
 		#[account(

@@ -21,6 +21,7 @@ use anchor_spl::{
 		category: u8,
 	)]
 	pub struct CreateMilestonePayment<'info> {
+		#[account(mut)]
 		pub authority: Signer<'info>,
 
 		#[account(

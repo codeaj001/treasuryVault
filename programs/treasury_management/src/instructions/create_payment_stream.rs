@@ -22,6 +22,7 @@ use anchor_spl::{
 		category: u8,
 	)]
 	pub struct CreatePaymentStream<'info> {
+		#[account(mut)]
 		pub authority: Signer<'info>,
 
 		#[account(

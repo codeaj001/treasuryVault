@@ -17,6 +17,7 @@ use anchor_spl::{
 		label: String,
 	)]
 	pub struct AddWhitelistRecipient<'info> {
+		#[account(mut)]
 		pub authority: Signer<'info>,
 
 		#[account(
